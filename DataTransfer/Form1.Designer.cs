@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -41,10 +46,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -55,17 +66,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -112,6 +112,60 @@
             this.tabPage1.Text = "Dashboard";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label21.Location = new System.Drawing.Point(50, 398);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(142, 32);
+            this.label21.TabIndex = 30;
+            this.label21.Text = "Nationality";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label20.Location = new System.Drawing.Point(50, 323);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(98, 32);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "Gender";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(50, 189);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(161, 32);
+            this.label19.TabIndex = 28;
+            this.label19.Text = "Blood Group";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(50, 257);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(66, 32);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "DOB";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(1060, 19);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(93, 53);
+            this.button3.TabIndex = 26;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(811, 100);
@@ -150,6 +204,7 @@
             this.label9.Size = new System.Drawing.Size(84, 32);
             this.label9.TabIndex = 22;
             this.label9.Text = "label9";
+            this.label9.Visible = false;
             // 
             // label8
             // 
@@ -160,6 +215,7 @@
             this.label8.Size = new System.Drawing.Size(84, 32);
             this.label8.TabIndex = 21;
             this.label8.Text = "label8";
+            this.label8.Visible = false;
             // 
             // label7
             // 
@@ -170,6 +226,7 @@
             this.label7.Size = new System.Drawing.Size(84, 32);
             this.label7.TabIndex = 20;
             this.label7.Text = "label7";
+            this.label7.Visible = false;
             // 
             // label6
             // 
@@ -180,6 +237,7 @@
             this.label6.Size = new System.Drawing.Size(84, 32);
             this.label6.TabIndex = 19;
             this.label6.Text = "label6";
+            this.label6.Visible = false;
             // 
             // label5
             // 
@@ -190,6 +248,7 @@
             this.label5.Size = new System.Drawing.Size(84, 32);
             this.label5.TabIndex = 18;
             this.label5.Text = "label5";
+            this.label5.Visible = false;
             // 
             // label4
             // 
@@ -200,6 +259,7 @@
             this.label4.Size = new System.Drawing.Size(84, 32);
             this.label4.TabIndex = 17;
             this.label4.Text = "label4";
+            this.label4.Visible = false;
             // 
             // tabPage2
             // 
@@ -215,6 +275,21 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Reports";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Firebrick;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(905, 390);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(171, 61);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "Download";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox2
             // 
@@ -273,6 +348,61 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(774, 386);
             this.panel1.TabIndex = 26;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label25.Location = new System.Drawing.Point(31, 286);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(156, 32);
+            this.label25.TabIndex = 28;
+            this.label25.Text = "Record Type";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label24.Location = new System.Drawing.Point(31, 215);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(215, 32);
+            this.label24.TabIndex = 27;
+            this.label24.Text = "Location Hospital";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label23.Location = new System.Drawing.Point(31, 155);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(112, 32);
+            this.label23.TabIndex = 26;
+            this.label23.Text = "Remarks";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label22.Location = new System.Drawing.Point(31, 85);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(193, 32);
+            this.label22.TabIndex = 25;
+            this.label22.Text = "Hostpital Name";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label15.Location = new System.Drawing.Point(31, 14);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(127, 32);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "Doctor ID";
             // 
             // label10
             // 
@@ -335,10 +465,10 @@
             this.tabPage4.Controls.Add(this.label3);
             this.tabPage4.Controls.Add(this.comboBox1);
             this.tabPage4.Controls.Add(this.label1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 46);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1161, 510);
+            this.tabPage4.Size = new System.Drawing.Size(1161, 489);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Settings";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -394,130 +524,6 @@
             this.label1.Size = new System.Drawing.Size(169, 54);
             this.label1.TabIndex = 17;
             this.label1.Text = "Hex Key";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(1060, 19);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 53);
-            this.button3.TabIndex = 26;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(50, 257);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(66, 32);
-            this.label18.TabIndex = 27;
-            this.label18.Text = "DOB";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(50, 189);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(161, 32);
-            this.label19.TabIndex = 28;
-            this.label19.Text = "Blood Group";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label20.Location = new System.Drawing.Point(50, 323);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(98, 32);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "Gender";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label21.Location = new System.Drawing.Point(50, 398);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(142, 32);
-            this.label21.TabIndex = 30;
-            this.label21.Text = "Nationality";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Firebrick;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(905, 390);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(171, 61);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "Download";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label15.Location = new System.Drawing.Point(31, 14);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(127, 32);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "Doctor ID";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label22.Location = new System.Drawing.Point(31, 85);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(193, 32);
-            this.label22.TabIndex = 25;
-            this.label22.Text = "Hostpital Name";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label23.Location = new System.Drawing.Point(31, 155);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(112, 32);
-            this.label23.TabIndex = 26;
-            this.label23.Text = "Remarks";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label24.Location = new System.Drawing.Point(31, 215);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(215, 32);
-            this.label24.TabIndex = 27;
-            this.label24.Text = "Location Hospital";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label25.Location = new System.Drawing.Point(31, 286);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(156, 32);
-            this.label25.TabIndex = 28;
-            this.label25.Text = "Record Type";
             // 
             // Form1
             // 

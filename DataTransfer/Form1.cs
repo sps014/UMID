@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
+using UMID;
 
 namespace DataTransfer
 {
@@ -34,7 +35,9 @@ namespace DataTransfer
                 Init();
                 _serialPort.Open();
 
+
             });
+
 
         
 
@@ -58,9 +61,12 @@ namespace DataTransfer
                     uid = data;
                     con(data);
                     button3.Enabled = true;
+                    ShowControls();
                 });
+               
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -74,7 +80,15 @@ namespace DataTransfer
         }
 
 
-
+        private void ShowControls()
+        {
+            label4.Visible = true;
+            label5.Visible = true;
+            label6.Visible = true;
+            label7.Visible = true;
+            label8.Visible = true;
+            label9.Visible = true;
+        }
         private async void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
             try
