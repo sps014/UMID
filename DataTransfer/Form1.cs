@@ -19,7 +19,7 @@ namespace DataTransfer
 {
     public partial class Form1 : Form
     {
-        SerialPort _serialPort = new SerialPort("COM6", 9600);
+        SerialPort _serialPort = new SerialPort("COM4", 9600);
         List<Dictionary<string, object>> REP = new List<Dictionary<string, object>>();
         int Count = 0;
         public Form1()
