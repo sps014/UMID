@@ -1,3 +1,7 @@
+# AIM
+
+To create Universal Medical Identity for Patients with help of RFID card 
+
 # INSTRUCTIONS
 
 To run this software browse to `UMID-master\DataTransfer\bin\Release` and run `UMID.exe`.
